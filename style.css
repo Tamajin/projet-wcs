@@ -31,4 +31,23 @@ h1, h2{
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 1.5rem;
-    }
+}
+
+/* Mise en style de la section Hero */
+
+.hero{
+    background-image: url(https://picsum.photos/800/250);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 250px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+/* Travaillons maintenant le bouton */
+
+.cta{
+    background-color: aqua;
+    
+}
