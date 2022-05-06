@@ -3,6 +3,8 @@
     margin: 0;
 }
 
+/* Style de la barre de navigation et du Header contenant une image de fond */
+
 header{
     background-image: url(https://picsum.photos/800/150);
     background-repeat: no-repeat;
@@ -12,6 +14,8 @@ header{
 nav{
     height: 150px;
 }
+
+/* Mise en forme des titres et sous-titres */
 
 h1{
     padding-top: 10px;
@@ -27,4 +31,29 @@ h1, h2{
     justify-content: space-between;
     align-items: flex-end;
     margin-top: 1.5rem;
-    }
+}
+
+/* Mise en style de la section Hero */
+
+.hero{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
+    background-image: url(https://picsum.photos/800/250);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 60%;
+    height: 350px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+/* Travaillons maintenant le bouton */
+
+.cta{
+    background-color: aqua;
+    border: none;
+    width: 160px;
+    height: 50px;
+    margin-left: 0%;
+}
