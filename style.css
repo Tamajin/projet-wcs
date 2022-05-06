@@ -36,11 +36,14 @@ h1, h2{
 /* Mise en style de la section Hero */
 
 .hero{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(3, auto);
     background-image: url(https://picsum.photos/800/250);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 80%;
-    height: 250px;
+    width: 60%;
+    height: 350px;
     margin: auto;
     margin-top: 5rem;
 }
@@ -49,5 +52,8 @@ h1, h2{
 
 .cta{
     background-color: aqua;
-    
+    border: none;
+    width: 160px;
+    height: 50px;
+    margin-left: 0%;
 }
