@@ -119,22 +119,46 @@ h1, h2{
 
 .themes{
     text-align: left;
+    width: 70%;
     font-size: 1.8rem;
     border-bottom: #263859 solid 3px;
     padding: 40px;
     padding-bottom: 0;
     margin-bottom: 40px;
+    animation-name: defilement;
+    animation-duration: 8s;
+    animation-delay: 0.3s;
+    animation-direction: normal;
+}
+
+@keyframes defilement{
+    from{
+      border-bottom: none;
+    }
+    25%{
+        border-bottom-width: 15%;
+    }
+    50%{
+        border-bottom-width: 30%;
+    }
+    75%{
+        border-bottom-width: 60%;
+    }
+    to{
+        border-bottom-width: 100%;
+    }
 }
 
 /* mise en forme de la galerie de miniatures pour les catégories */
 
 .grid-contain{
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    width: 80%;
+    grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, 150px);
     background-color: red;
     gap: 20px;
-    margin: 15px;
+    margin: auto;
 }
 
 .grid-contain > a{
