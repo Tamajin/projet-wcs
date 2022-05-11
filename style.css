@@ -162,13 +162,19 @@ h1, h2{
 
 .home-footer{
     display: flex;
+    justify-content: space-around;
     width: 100%;
     height: 30vh;
     background-color: #FF6768;
 }
 
+#conclusion{
+    width: 40%;
+}
+
 #more-fun{
     display: flex;
+    width: 20%;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
@@ -176,6 +182,7 @@ h1, h2{
 
 #contact-footer{
     display: flex;
+    width: 30%;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
