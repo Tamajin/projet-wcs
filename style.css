@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #F9E2C1;
+    /* background-color: #F9E2C1; */
 }
 
 /* Mise en forme des titres et sous-titres */
@@ -208,8 +208,71 @@ nav{
     display: block;
 }
 
+/* Insertion du logio en haut de la page des formulaires */
+
+.logo-social-page{
+    display: block;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+}
+
 /* formulaires : mise en page */
 
+fieldset{
+    border: #263859 3px solid;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+legend{
+    color: #FF6768;
+    font-size: 1.7rem;
+    font-style: italic;
+    font-weight: 800;
+
+}
+
+fieldset label:nth-of-type(2n+1){
+    text-align: end;
+}
+
+fieldset input:nth-of-type(2n-1){
+    margin-left: 400px;
+}
+
+label{
+    font-size: 1.2rem;
+}
+
+/* Classe spéciale pour l'input associé au prénom que je n'arrive pas à exclure du sélecteur nthoftype  */
+
+.input-size-min{
+    width: 350px;
+}
+
+/* Mise en forme du bouton de soumission des formulaires */
+
+input[type="submit"]{
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    align-self: center;
+    border-style: none;
+    border-radius: 7px;
+    background-color: #FF6768;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    transform: scale(1.2);
+    border: solid #263859 2px;
+}
 
 /* Footer */
 
