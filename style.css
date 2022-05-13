@@ -41,6 +41,7 @@ nav{
     margin-top: 1.5rem;
 }
 
+
 .nav-items > a{
     text-decoration: none;
     color: #FF6768;
@@ -48,6 +49,15 @@ nav{
 
 .nav-items{
     font-size: 1.2rem;
+}
+
+/* Nav bar spécifique à la page communautaire */
+
+.nav-bar-bis{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    margin-top: 1.5rem;
 }
 
 /* insertion d'un logo pour la page bonus au centre de la page. Souhaité arrondi avec le titre qui passe par dessus (z-index ?) */
@@ -181,11 +191,6 @@ nav{
 
 /* positionnement des items dans la grid */
 
-/* .theme2{
-    grid-column: 3 / 4;
-    grid-row: 3 / 4;
-} */
-
 .empty-space{
     grid-column: 2 / 3;
     grid-row: 1 / 2;
@@ -252,6 +257,12 @@ nav{
     display: block;
 }
 
+/* Titre d'introduction formulaire de contact" */
+
+.intro-contact{
+    justify-content: center;
+}
+
 /* Insertion du logo en haut de la page des formulaires */
 
 .logo-social-page{
@@ -260,7 +271,6 @@ nav{
     height: 100px;
     margin: auto;
     margin-top: 100px;
-    margin-bottom: 50px;
     border: #263859 2px solid;
     border-radius: 50px;
     background-color: #fefdfd;
@@ -289,8 +299,10 @@ fieldset label:nth-of-type(2n+1){
     text-align: end;
 }
 
-fieldset input:nth-of-type(2n-1){
-    margin-left: 400px;
+.left-position{
+   align-self: flex-start;
+   width: 350px;
+   height: 32px;
 }
 
 label{
@@ -300,7 +312,10 @@ label{
 /* Classe spéciale pour l'input associé au prénom que je n'arrive pas à exclure du sélecteur nthoftype  */
 
 .input-size-min{
+    display: block;
     width: 350px;
+    height: 32px;
+    align-self: flex-end;
 }
 
 /* Mise en forme du bouton de soumission des formulaires */
