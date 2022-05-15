@@ -236,6 +236,7 @@ nav{
 /* Agencement de la page avec articles et illus */
 
 .articles{
+    display: flex;
     margin: auto;
     margin-top: 10vh;
     margin-bottom: 10vh;
@@ -246,7 +247,17 @@ nav{
     padding: 15px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
+}
+
+/* La cité de la peur, quelques citations avec vignette et mise en forme du texte. */
+
+.cite-de-la-peur{
+    background-image: url(assets/cite-de-la-peur.jpg);
+    background-size: cover;
+    width: 120px;
+    height: 140px;
 }
 
 .articles > div:nth-child(2n){
