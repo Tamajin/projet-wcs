@@ -13,6 +13,7 @@ h1{
 }
 
 h1, h2{
+    color: white;
     text-align: center;
     line-height: 2rem;
 }
@@ -27,7 +28,7 @@ h1, h2{
 /* Style de la barre de navigation et du Header contenant une image de fond */
 
 header{
-    background-image: url(https://picsum.photos/800/150);
+    background-image: url(assets/abstract-dark-blurred-background-smooth-gradient-texture-color-shiny-bright-website-pattern-banner-header-sidebar-graphic-art-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
