@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
 *{
     list-style-type: none;
     box-sizing: border-box;
@@ -236,36 +238,55 @@ nav{
 /* Agencement de la page avec articles et illus */
 
 .articles{
-    display: flex;
-    margin: auto;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 120px 1fr 1fr 120px;
+
+/* faire un essai en renommant chaque colonne avec les [] pour positionner les affiches */
+
+    grid-auto-rows: minmax(140px, auto);
+    width: 60%;
+    margin: auto;   
     margin-top: 10vh;
     margin-bottom: 10vh;
-    width: 90%;
 }
 
 .articles > div{
     padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    grid-column: span 3;
 
 }
 
-/* La cité de la peur, quelques citations avec vignette et mise en forme du texte. */
-
-.cite-de-la-peur{
-    background-image: url(assets/cite-de-la-peur.jpg);
-    background-size: cover;
-    width: 120px;
-    height: 140px;
+q{
+    font-family: 'Oleo Script Swash Caps', cursive;
 }
 
-.articles > div:nth-child(2n){
-    flex-direction: row-reverse;
+blockquote{
+    border: 1px solid black;
+    background-color:antiquewhite;
+    width: 350px;
+    margin: auto;
 }
 
 .articles > img {
-    display: block;
+    grid-area: a;
+}
+
+.articles > img:nth-child(2n){
+    justify-self: end;
+}
+
+/* La cité de la peur : vignette. */
+
+.articles > span{
+    background-size: cover;
+    width: 120px;
+    height: 140px;
+    align-self: center;
+}
+
+span > img{
+    width: 100%;
 }
 
 /* Titre d'introduction formulaire de contact" */
