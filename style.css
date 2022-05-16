@@ -242,17 +242,14 @@ nav{
     display: grid;
     gap: 10px;
     grid-template-columns: 120px 1fr 1fr 120px;
-
-/* faire un essai en renommant chaque colonne avec les [] pour positionner les affiches */
-
-    grid-auto-rows: minmax(140px, auto);
-    width: 60%;
-    margin: auto;   
+    grid-template-rows: repeat(3, auto);
+    width: 60vw;   
     margin-top: 10vh;
     margin-bottom: 10vh;
 }
 
 .articles > div{
+    display: grid;
     padding: 15px;
     grid-column: span 3;
 
@@ -265,16 +262,16 @@ q{
 blockquote{
     border: 1px solid black;
     background-color:antiquewhite;
-    width: 350px;
+    width: 100%;
+    text-align: center;
     margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
 }
 
-.articles > img {
-    grid-area: a;
-}
-
-.articles > img:nth-child(2n){
-    justify-self: end;
+blockquote > p{
+    text-align: left;
 }
 
 /* La cité de la peur : vignette. */
@@ -283,7 +280,7 @@ blockquote{
     background-size: cover;
     width: 120px;
     height: 140px;
-    align-self: center;
+    margin-top: 25px;
 }
 
 span > img{
