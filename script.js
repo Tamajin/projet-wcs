@@ -11,3 +11,9 @@ btnSubmit1.addEventListener("click", function(event){
     event.preventDefault();
     alert ("Votre message a bien été reçu, mais ne partez pas si vite ! Si vous ne l'avez pas encore trouvé, il y a un bonus caché quelque part.");
 });
+
+// const footerBtn = document.querySelector(".footer-btn");
+// footerBtn.addEventListener("click", function(event){
+//     event.preventDefault();
+//     footerBtn.open("social.html", "socialPage");
+// });

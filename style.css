@@ -4,6 +4,7 @@
     list-style-type: none;
     box-sizing: border-box;
     margin: 0;
+    text-decoration: none;
 }
 
 /* Mise en forme des titres et sous-titres */
@@ -45,14 +46,21 @@ nav{
     padding: 0;
 }
 
-
 .nav-items > a{
-    text-decoration: none;
     color: #FF6768;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-.nav-items{
-    font-size: 1.2rem;
+.nav-items > a:hover{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #f1e4c3;
+}
+
+.nav-items > a:visited{
+    color: #96254b;
 }
 
 /* Nav bar spécifique à la page communautaire */
@@ -69,10 +77,12 @@ nav{
 .duck-logo{
     width: 150px;
     height: 100px;
-    border-radius: 100px;
+    border:#263859 1px solid;
+    border-radius: 60% 90% 60% 90%;
     display: flex;   
     text-align: center; 
     margin: auto;
+    margin-top: 30px;
     padding: 20px 0 0 0;
 }
 
@@ -158,6 +168,7 @@ nav{
     line-height: 1.4;
     text-align: justify;
     grid-area: 3 / 1 / 3 / 4;
+    padding: 5px;
 }
 
 /* Placement du h3 */
@@ -241,7 +252,6 @@ nav{
     width: 80%;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, 150px);
-    background-color: red;
     gap: 20px;
     margin: auto;
     margin-top: 40px;
@@ -414,7 +424,7 @@ input[type="submit"]:hover{
 
 .home-footer{    
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     height: 30vh;
@@ -423,6 +433,10 @@ input[type="submit"]:hover{
 
 #conclusion{
     width: 20%;
+    line-height: 1.4;
+    color: #263859;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 #contact-footer{
@@ -447,6 +461,12 @@ input[type="submit"]:hover{
     height: 3rem;
 }
 
+.footer-btn > a{
+    cursor: default;
+    color: #263859;
+    font-size: 1.1rem;
+}
+
 /* tentative de récupération  et d'ajustement d'un codepen pour pacman */
 
 .pacman {
@@ -458,7 +478,7 @@ input[type="submit"]:hover{
     margin-top: 20px;
     margin-right: 15px;
     font-family: "Slabo 27px", serif;
-  }
+}
 
 
 .pacman__eye {
@@ -469,7 +489,7 @@ input[type="submit"]:hover{
     top: 20px;
     right: 40px;
     background: #333333;
-  }
+}
 
   .pacman__mouth {
     background: #000;
@@ -480,7 +500,7 @@ input[type="submit"]:hover{
     animation-name: eat;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
-  }
+}
   .pacman__food {
     position: absolute;
     width: 15px;
@@ -492,7 +512,7 @@ input[type="submit"]:hover{
     animation-name: food;
     animation-duration: 0.7s;
     animation-iteration-count: infinite;
-  }
+}
 
 @keyframes eat {
   0% {
