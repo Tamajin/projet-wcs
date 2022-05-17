@@ -5,3 +5,5 @@ const btnSubmit = document.querySelector(".submit-btn");
 
 btnSubmit.addEventListener(onclick) => 
     alert = "Votre message a bien été reçu, mais ne partez pas si vite ! Si vous ne l'avez pas encore trouvé, il y a un bonus caché quelque part."
+ 
+
