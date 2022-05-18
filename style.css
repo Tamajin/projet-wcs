@@ -291,14 +291,13 @@ nav{
     margin-bottom: 40px ;
 }
 
-.nanard-grid > a{
+.nanard-links{
     background-color: green;
     width: 100%;
     height: 100%;
     justify-self: center;
     align-self: center;
-    background-image: url(https://picsum.photos/150);
-    
+    background-image: url(https://picsum.photos/150);    
 }
 
 /* Agencement de la page avec articles et illus */
