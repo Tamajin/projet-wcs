@@ -282,7 +282,7 @@ nav{
 
 .nanard-grid{
     display: grid;
-    width: 80%;
+    width: 60%;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(3, 150px);
     gap: 20px;
@@ -297,7 +297,9 @@ nav{
     height: 100%;
     justify-self: center;
     align-self: center;
-    background-image: url(https://picsum.photos/150);    
+    background-image: url(https://picsum.photos/150);
+    background-repeat: no-repeat;
+    background-size: cover;   
 }
 
 /* Agencement de la page avec articles et illus */
