@@ -1,19 +1,20 @@
-const btnSubmit = document.querySelector(".submit-btn");
-const btnSubmit1 = document.querySelector(".submit-btn1");
-
-btnSubmit.addEventListener("click", function(event){
+// Action sur click du logo en responsive pour afficher le dropdown menu
+// Je stocke la variable du logo
+const responsiveLogo = document.querySelector(".logo-responsive");
+console.log(responsiveLogo);
+// Je stocke le résultat de l'action au click, l'affichage du sous-menu
+const dropDown = document.querySelector(".responsive-nav");
+console.log(dropDown);
+let showBurger = false;
+// Je gère l'évènement
+responsiveLogo.addEventListener("click", function(event){
     event.preventDefault();
-    btnSubmit.value = "Contribution envoyée";
-    btnSubmit.style.fontSize = "0.6rem";    
-    alert("Ne partez pas trop vite, il y a un bonus caché quelque part");
-})
-btnSubmit1.addEventListener("click", function(event){
-    event.preventDefault();
-    alert ("Votre message a bien été reçu, mais ne partez pas si vite ! Si vous ne l'avez pas encore trouvé, il y a un bonus caché quelque part.");
+    if (showBurger == false){
+        showBurger = true;
+        dropDown.style.display = "block";
+    }
+    else {
+        showBurger = false;
+        dropDown.style.display = "none";
+    };
 });
-
-// const footerBtn = document.querySelector(".footer-btn");
-// footerBtn.addEventListener("click", function(event){
-//     event.preventDefault();
-//     footerBtn.open("social.html", "socialPage");
-// });
