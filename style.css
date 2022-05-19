@@ -355,8 +355,14 @@ span > img{
 }
 
 .videos{
-    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     width: 30vw;
+}
+
+iframe {
+    width: 100%;
 }
 
 /* Titre d'introduction formulaire de contact" */
@@ -425,6 +431,7 @@ label{
 
 input[type="submit"]{
     margin-top: 10px;
+    margin-bottom: 2%;
     width: 150px;
     height: 40px;
     align-self: center;
@@ -460,6 +467,24 @@ input[type="submit"]:hover{
     cursor:default;
 }
 
+/* Page cachée au clic sur le pacman, work in progres */
+
+.wip{
+margin-bottom: 10%;
+}
+
+.quizz{
+    color: #263859;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.wip-img{
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
 /* Footer */
 
 .home-footer{    
@@ -473,9 +498,9 @@ input[type="submit"]:hover{
 
 #conclusion{
     width: 20%;
-    line-height: 1.4;
+    line-height: 1.2;
     color: #263859;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
