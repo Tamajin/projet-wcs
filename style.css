@@ -63,11 +63,7 @@ nav{
 
 /* Barre de navigation responsive */
 
-.logo-responsive{
-    display: none;
-}
-
-.logo-burger{
+.logo-responsive, .logo-burger{
     display: none;
 }
 
@@ -135,7 +131,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: 20px 20px 1fr 60px;
-    background-image: url(assets/diner-de-cons-cta.jpg);
+    background-image: url(assets/diner-de-cons-cta-removebg-preview.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 60%;
@@ -181,9 +177,9 @@ nav{
 .accroche{
     grid-area: -1 / 1 / 1 / 4;
     justify-self: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 800;
-    color: #393f45;
+    color:#263859;
 }
 
 /* le texte d'introduction */
@@ -191,18 +187,18 @@ nav{
 .intro{
     border: 1px solid #263859;
     border-radius: 5% 0% 5% 0%;
-    background-color: #f1e4c3;
     overflow: hidden;
-    color:#263859;
+    color: black;
+    font-size: 1.1rem;
+    font-weight: 300;
     margin-right: 10px;
-    opacity: 0.8;
     height: 140px;
     width: 345px;
     justify-self: center;
     line-height: 1.4;
     text-align: justify;
     grid-area: 3 / 1 / 3 / 4;
-    padding: 5px;
+    padding: 20px;
 }
 
 /* Placement du h3 */
@@ -304,6 +300,11 @@ nav{
 
 /* Agencement de la page avec articles et illus */
 
+.content-layout{
+    display: flex;
+    justify-content: space-around;
+}
+
 .articles{
     display: grid;
     gap: 10px;
@@ -351,6 +352,11 @@ blockquote > p{
 
 span > img{
     width: 100%;
+}
+
+.videos{
+    background-color: yellow;
+    width: 30vw;
 }
 
 /* Titre d'introduction formulaire de contact" */
@@ -461,7 +467,7 @@ input[type="submit"]:hover{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    height: 30vh;
+    height: 120px;
     background-color:#FF6768;
 }
 
@@ -509,7 +515,6 @@ input[type="submit"]:hover{
     border-radius: 50%;
     background: #f2d648;
     position: relative;
-    margin-top: 20px;
     margin-right: 15px;
     font-family: "Slabo 27px", serif;
 }
@@ -685,10 +690,16 @@ input[type="submit"]:hover{
     .hero{
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: space-around;
         width: 90%;
         background-size: contain;
     }
+
+    .intro{
+        margin: 0;
+    }
+
     .home-footer{    
         display: flex;
         justify-content: space-around;
