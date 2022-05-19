@@ -745,7 +745,7 @@ margin-bottom: 10%;
     .accroche{
         font-size: 1.2rem;
     }
-    
+
     .intro{
         padding-top: 15px;
         margin-top: 200px;
@@ -769,6 +769,15 @@ margin-bottom: 10%;
         color: #263859;
         font-size: 0.7rem;
         font-weight: bold;
+    }
+
+    .wip{
+        margin-top: 160px;
+        height: 40vh;
+    }
+
+    .quizz{
+        font-size: 1.1rem;
     }
 
     #contact-footer p{
